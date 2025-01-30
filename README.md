@@ -1,0 +1,2 @@
+- Añadir efecto hover en los elementos del grid de calas.
+- Sustituir sección de playas por cuevas.

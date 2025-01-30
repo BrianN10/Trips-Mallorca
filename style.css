@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primary-color: #1b3785;
+}
+
+header {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353535;
+
+}
+
+.logo {
+    margin-left: 52px;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav {
+    margin-right: 52px;
+    color: white;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: all ease-in 150ms;
+}
+
+nav a:hover{
+    scale: 1.4;
+}
+
+/* VIDEO INICIAL */
+
+
+.videoContainer {
+    position: relative;
+    height: 91vh;
+    overflow: hidden;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 300px;
+}
+
+.videoContainer video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+    object-fit: cover;
+}
+
+article {
+    margin-top: 150px;
+    color: #FFF;
+    text-shadow: 5px 5px 10px #353535;
+    letter-spacing: 1px;
+}
+
+article h1 {
+    font-size: 64px;
+    
+}
+
+article h2 {
+    font-size: 38px;
+}
+
+.iconosContainer {
+    display: grid;
+    grid-template-columns: 64px 64px;
+    grid-template-rows: 64px 64px;
+    grid-gap: 20px;
+    margin-top: 150px;
+}
+
+.iconosContainer a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+}
+
+.iconosContainer a svg {
+    fill: #FFF;
+}
+/* Para poner un margen al primer icono */
+.iconosContainer a:first-of-type {
+    margin-top: 10px;
+}
+
+.iconosContainer a i::before {
+    width: 100%;
+    color: #FFF;
+}
+
+.banner1 {
+    width: 75%;
+    height: 244px;
+    background-color: #353535;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 38px;
+    color: #FFF;
+    box-shadow: 5px 5px 5px #0000008a;
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner1 div {
+    text-align: center;
+}
+
+/* Seccion de calas */
+.sectionContainer {
+    display: flex;
+    margin-bottom: 150px;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.sectionInfo{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sectionInfo h3 {
+    font-size: 38px;
+    margin-bottom: 2rem;
+}
+
+.sectionInfo p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.sectionInfo p:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.sectionInfo a {
+    color: #FFF;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    transition: all ease-in 300ms;
+    border: 2px solid var(--primary-color);
+}
+
+.sectionInfo a:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.gridContainer{
+     width: 50%;
+     padding-left: 40px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+    row-gap: 1rem;
+
+}
+
+.gridContainer div {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 218px;
+    width: 218px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.gridContainer p{
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.gridContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner2{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%23ffffffff'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='1' stroke='%231b378380' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+    /* background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(6) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%23ffffffff'/><path d='M-10-10A10 10 0 00-20 0a10 10 0 0010 10A10 10 0 010 0a10 10 0 00-10-10zM10-10A10 10 0 000 0a10 10 0 0110 10A10 10 0 0120 0a10 10 0 00-10-10zM30-10A10 10 0 0020 0a10 10 0 0110 10A10 10 0 0140 0a10 10 0 00-10-10zM-10 10a10 10 0 00-10 10 10 10 0 0010 10A10 10 0 010 20a10 10 0 00-10-10zM10 10A10 10 0 000 20a10 10 0 0110 10 10 10 0 0110-10 10 10 0 00-10-10zM30 10a10 10 0 00-10 10 10 10 0 0110 10 10 10 0 0110-10 10 10 0 00-10-10z'  stroke-width='0.5' stroke='%231b3785ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>") */
+    /* background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%23ffffffff'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='1' stroke='%231b3785ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>") */  
+}
+/* Título banner */
+.banner2 h3 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px #5e5d5d;
+}
+/* Subtititulo banner */
+.banner2 h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 4px #5e5d5d;
+}
+/* Boton Explorar */
+.banner2 a {
+    color: #FFF;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    transition: all ease-in 300ms;
+    border: 2px solid var(--primary-color);
+}
+
+.banner2 a:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#353535;
+}
+/* Logo Footer */
+footer div img {
+    width: 100px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+/* Iconos footer */
+.iconosFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 16px;
+}
+
+.iconosFooter a {
+    height: 30px;
+    width: 30px;
+}
+
+.iconosFooter svg {
+    fill: #FFF;
+}
+
+/* Enlaces Footer */
+
+.enlacesFooter{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 16px;
+}
+
+.enlacesFooter a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all ease-in 300ms ;
+}
+
+.enlacesFooter a:hover {
+    scale: 1.2;    
+}
+
+/* Copyright Footer */
+
+footer p {
+    color: #FFF;
+    font-size: 14px;
+    margin-bottom: 16px;    
+}
